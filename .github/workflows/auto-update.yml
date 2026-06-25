@@ -28,8 +28,8 @@ jobs:
       - name: Create .nojekyll for GitHub Pages
         run: touch .nojekyll
 
-      - name: Generate Gallery HTML
-        run: python bing_gallery_github.py
+      - name: Run Python script
+        run: python .github/workflows/scripts/bing_gallery_github.py
 
       - name: Validate Output
         id: validate
